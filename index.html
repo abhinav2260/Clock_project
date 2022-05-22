@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>clock_project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;800&display=swap" rel="stylesheet">
+    </head>
+    <body onload="begin()">
+      <section>
+        <div class="left">
+            <div class="l_logo">
+                <img src="clock_logo.png">
+            </div>
+
+            <div class="l_dropbox">
+                 
+                <div class="wake_up">
+                    <img class="icons" src="wake_up.png">
+                    <label class="dropboxmsg" for="">Set Wake up time</label>
+                    <select  name="" id="optionset1">
+                        <option style="background-color: #FFFFFF" value="Default">Default</option> 
+                        <option style="background-color:#FFFFFF " value="1">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="2">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="3">3 AM - 4 AM</option>
+                        <option style="background-color:#FFFFFF " value="4">4 AM - 5 AM</option>
+                        <option style="background-color:#FFFFFF " value="5">5 AM - 6 AM</option>
+                        <option style="background-color:#FFFFFF " value="6">6 AM - 7 AM</option>
+                        <option style="background-color:#FFFFFF " value="7">7 AM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="8">8 AM - 9 AM</option>
+                        <option style="background-color:#FFFFFF " value="9">9 AM - 10 AM</option>
+                        <option style="background-color:#FFFFFF " value="10">10 AM - 11 AM</option>
+                        <option style="background-color:#FFFFFF " value="11">11 AM - 12 PM</option>
+                        <option style="background-color:#FFFFFF " value="12">12 PM - 1 PM</option>
+                        <option style="background-color:#FFFFFF " value="13">1 PM - 2 PM</option>
+                        <option style="background-color:#FFFFFF " value="14">2 PM - 3 PM</option>
+                        <option style="background-color:#FFFFFF " value="15">3 PM - 4 PM</option>
+                        <option style="background-color:#FFFFFF " value="16">4 PM - 5 PM</option>
+                        <option style="background-color:#FFFFFF " value="17">5 PM - 6 PM</option>
+                        <option style="background-color:#FFFFFF " value="18">6 PM - 7 PM</option>
+                        <option style="background-color:#FFFFFF " value="19">7 PM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="20">8 PM - 9 PM</option>
+                        <option style="background-color:#FFFFFF " value="21">9 PM - 10 PM</option>
+                        <option style="background-color:#FFFFFF " value="22">10 PM - 11 PM</option>
+                        <option style="background-color:#FFFFFF " value="23">11 PM - 12 AM</option>
+                        <option style="background-color:#FFFFFF " value="0">12 AM - 1 AM</option>
+
+                    </select>
+
+
+                </div>
+
+                <div class="Lunch">
+                    <img class="icons" src="lunch_time.svg">
+                    <label class="dropboxmsg" for="">Set lunch time</label>
+                    <select  name="" id="optionset2">
+                        <option style="background-color: #FFFFFF" value="Default">Default</option> 
+                        <option style="background-color:#FFFFFF " value="1">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="2">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="3">3 AM - 4 AM</option>
+                        <option style="background-color:#FFFFFF " value="4">4 AM - 5 AM</option>
+                        <option style="background-color:#FFFFFF " value="5">5 AM - 6 AM</option>
+                        <option style="background-color:#FFFFFF " value="6">6 AM - 7 AM</option>
+                        <option style="background-color:#FFFFFF " value="7">7 AM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="8">8 AM - 9 AM</option>
+                        <option style="background-color:#FFFFFF " value="9">9 AM - 10 AM</option>
+                        <option style="background-color:#FFFFFF " value="10">10 AM - 11 AM</option>
+                        <option style="background-color:#FFFFFF " value="11">11 AM - 12 PM</option>
+                        <option style="background-color:#FFFFFF " value="12">12 PM - 1 PM</option>
+                        <option style="background-color:#FFFFFF " value="13">1 PM - 2 PM</option>
+                        <option style="background-color:#FFFFFF " value="14">2 PM - 3 PM</option>
+                        <option style="background-color:#FFFFFF " value="15">3 PM - 4 PM</option>
+                        <option style="background-color:#FFFFFF " value="16">4 PM - 5 PM</option>
+                        <option style="background-color:#FFFFFF " value="17">5 PM - 6 PM</option>
+                        <option style="background-color:#FFFFFF " value="18">6 PM - 7 PM</option>
+                        <option style="background-color:#FFFFFF " value="19">7 PM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="20">8 PM - 9 PM</option>
+                        <option style="background-color:#FFFFFF " value="21">9 PM - 10 PM</option>
+                        <option style="background-color:#FFFFFF " value="22">10 PM - 11 PM</option>
+                        <option style="background-color:#FFFFFF " value="23">11 PM - 12 AM</option>
+                        <option style="background-color:#FFFFFF " value="0">12 AM - 1 AM</option>
+                    </select>
+
+
+                </div>
+
+                <div class="nap">
+                    <img class="icons" src="nap_time.png">
+                    <label class="dropboxmsg" for="">Set nap time</label>
+                    <select  name="" id="optionset3">
+                        <option style="background-color: #FFFFFF" value="Default">Default</option> 
+                        <option style="background-color:#FFFFFF " value="1">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="2">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="3">3 AM - 4 AM</option>
+                        <option style="background-color:#FFFFFF " value="4">4 AM - 5 AM</option>
+                        <option style="background-color:#FFFFFF " value="5">5 AM - 6 AM</option>
+                        <option style="background-color:#FFFFFF " value="6">6 AM - 7 AM</option>
+                        <option style="background-color:#FFFFFF " value="7">7 AM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="8">8 AM - 9 AM</option>
+                        <option style="background-color:#FFFFFF " value="9">9 AM - 10 AM</option>
+                        <option style="background-color:#FFFFFF " value="10">10 AM - 11 AM</option>
+                        <option style="background-color:#FFFFFF " value="11">11 AM - 12 PM</option>
+                        <option style="background-color:#FFFFFF " value="12">12 PM - 1 PM</option>
+                        <option style="background-color:#FFFFFF " value="13">1 PM - 2 PM</option>
+                        <option style="background-color:#FFFFFF " value="14">2 PM - 3 PM</option>
+                        <option style="background-color:#FFFFFF " value="15">3 PM - 4 PM</option>
+                        <option style="background-color:#FFFFFF " value="16">4 PM - 5 PM</option>
+                        <option style="background-color:#FFFFFF " value="17">5 PM - 6 PM</option>
+                        <option style="background-color:#FFFFFF " value="18">6 PM - 7 PM</option>
+                        <option style="background-color:#FFFFFF " value="19">7 PM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="20">8 PM - 9 PM</option>
+                        <option style="background-color:#FFFFFF " value="21">9 PM - 10 PM</option>
+                        <option style="background-color:#FFFFFF " value="22">10 PM - 11 PM</option>
+                        <option style="background-color:#FFFFFF " value="23">11 PM - 12 AM</option>
+                        <option style="background-color:#FFFFFF " value="0">12 AM - 1 AM</option>
+                    </select>
+
+
+                </div>
+
+                <div class="night">
+                    <img class="icons" src="nap_time.png">
+                    <label class="dropboxmsg" for="">Set night time</label>
+                    <select  name="" id="optionset4">
+                        <option style="background-color: #FFFFFF" value="Default">Default</option> 
+                        <option style="background-color:#FFFFFF " value="1">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="2">1 AM - 2 AM</option>
+                        <option style="background-color:#FFFFFF " value="3">3 AM - 4 AM</option>
+                        <option style="background-color:#FFFFFF " value="4">4 AM - 5 AM</option>
+                        <option style="background-color:#FFFFFF " value="5">5 AM - 6 AM</option>
+                        <option style="background-color:#FFFFFF " value="6">6 AM - 7 AM</option>
+                        <option style="background-color:#FFFFFF " value="7">7 AM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="8">8 AM - 9 AM</option>
+                        <option style="background-color:#FFFFFF " value="9">9 AM - 10 AM</option>
+                        <option style="background-color:#FFFFFF " value="10">10 AM - 11 AM</option>
+                        <option style="background-color:#FFFFFF " value="11">11 AM - 12 PM</option>
+                        <option style="background-color:#FFFFFF " value="12">12 PM - 1 PM</option>
+                        <option style="background-color:#FFFFFF " value="13">1 PM - 2 PM</option>
+                        <option style="background-color:#FFFFFF " value="14">2 PM - 3 PM</option>
+                        <option style="background-color:#FFFFFF " value="15">3 PM - 4 PM</option>
+                        <option style="background-color:#FFFFFF " value="16">4 PM - 5 PM</option>
+                        <option style="background-color:#FFFFFF " value="17">5 PM - 6 PM</option>
+                        <option style="background-color:#FFFFFF " value="18">6 PM - 7 PM</option>
+                        <option style="background-color:#FFFFFF " value="19">7 PM - 8 PM</option>
+                        <option style="background-color:#FFFFFF " value="20">8 PM - 9 PM</option>
+                        <option style="background-color:#FFFFFF " value="21">9 PM - 10 PM</option>
+                        <option style="background-color:#FFFFFF " value="22">10 PM - 11 PM</option>
+                        <option style="background-color:#FFFFFF " value="23">11 PM - 12 AM</option>
+                        <option style="background-color:#FFFFFF " value="0">12 AM - 1 AM</option>
+                       
+                    </select>
+
+
+                </div>
+               
+               
+
+            </div>
+
+            <div class="l_msgbox">
+                <p class="msg">Hello , welcome </p>
+            </div>
+            
+            <div class="l_bottom">
+ 
+                <button type="button"  onclick="settime()" class="setalarm1" onmouseover="partytime()" onmouseleave="setalarm()">Set Alarm </button>
+
+                <div class="schedule">
+                    <h3 id="Wake_Up_Time">Wake Up Time : </h3>
+                    <h3 id="Lunnch_Time">Lunch Time : </h3>
+                    <h3 id="Nap_Time">Nap Time : </h3>
+                    <h3 id="Night_Time">Night Time : </h3>
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="r_time">
+
+                <div class="r_toplayer">
+                    
+                    <div class="timecontainer">
+
+                        <h3 class="time">TIME</h3>
+
+                        <div class="hour_container">
+                            <p class="time_hour_text"></p>
+
+                            <p class="hours">hours</p>
+                        </div>
+
+                        <div class="minute_container">
+                            <p class="time_minute_text"></p>
+
+                            <p class="minute">minute</p>
+                        </div>
+
+                        <div class="second_container">
+                            <p class="time_second_text"></p>
+
+                            <p class="second">second</p>
+                        </div>
+                            
+                        <div class="am_pm">
+                            <h2 class="am_pm_text"></h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+            </div>
+
+            <div class="r_msg">
+                <h2 id="msgaccess" class="night_text">CLOSE YOUR EYES AND GO TO SLEEP</h2>
+            </div>
+
+            <div class="r_img">
+                <img id="pic" src="Component 30 – 1.png">
+            </div>
+
+        </div>
+
+      </section>
+        
+
+     
+        
+    </body>
+</html>
