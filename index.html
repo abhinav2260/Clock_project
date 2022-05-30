@@ -8,10 +8,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+       
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=Manrope:wght@200;300&display=swap" rel="stylesheet">
     </head>
     <body onload="begin()">
       <section>
@@ -26,7 +26,7 @@
                     <img class="icons" src="wake_up.png">
                     <label class="dropboxmsg" for="">Set Wake up time</label>
                     <select  name="" id="optionset1">
-                        <option style="background-color: #FFFFFF" value="Default">Default</option> 
+                        <option style="background-color: #FFFFFF " value="Default">Default</option> 
                         <option style="background-color:#FFFFFF " value="1">1 AM - 2 AM</option>
                         <option style="background-color:#FFFFFF " value="2">1 AM - 2 AM</option>
                         <option style="background-color:#FFFFFF " value="3">3 AM - 4 AM</option>
@@ -170,7 +170,7 @@
             
             <div class="l_bottom">
  
-                <button type="button"  onclick="settime()" class="setalarm1" onmouseover="partytime()" onmouseleave="setalarm()">Set Alarm </button>
+                <button type="button"  onclick="settime()" class="setalarm1" >Set Alarm </button>
 
                 <div class="schedule">
                     <h3 id="Wake_Up_Time">Wake Up Time : </h3>
@@ -236,6 +236,8 @@
         
 
      
+
         
     </body>
+    <script src="index.js"></script>
 </html>
