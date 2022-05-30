@@ -86,9 +86,13 @@ section{
     margin-top: 11px;
     margin-bottom: 11px;
     left: 55px;
-    /* font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-28) var(--unnamed-font-family-manrope);
-    font: normal normal normal 18px/28px Manrope;*/
-} 
+    font-family: Manrope;
+    font-weight: regular;
+    font-size: 17px;
+    color:#3D087B;
+    letter-spacing: 0px;
+
+}
 
 #optionset1{
     position: absolute;
@@ -98,6 +102,9 @@ section{
     width: 256px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+    font-family: Manrope;
+     font-size: 14px; 
+     color:#3D087BDE;
 }
 
 #optionset2{
@@ -108,6 +115,7 @@ section{
     width: 256px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+    font-family: Manrope; font-size: 14px; color:#3D087BDE;
 }
 
 #optionset3{
@@ -118,6 +126,7 @@ section{
     width: 256px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+    font-family: Manrope; font-size: 14px; color:#3D087BDE;
 }
 
 #optionset4{
@@ -128,14 +137,14 @@ section{
     width: 256px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+    font-family: Manrope; font-size: 14px; color:#3D087BDE;
 }
 .l_msgbox{
     margin-top: 15px;
-    background-color: #FFFFFF;
-    border: 1px solid #EDEDED;
+    background:rgba(255,255,255,0.23) ;
     border-radius: 10px;
-    opacity: 0.23;
     height: 77px;
+    padding: 20px;
    
 }
 
@@ -159,6 +168,12 @@ section{
     height:50px;
     background-image: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
     border-radius: 4px;
+    color: #FFFFFF;
+    font-family: Manrope;
+    
+    font-size: 24px;
+    border: none;
+    
 }
 
 .setalarm2{
@@ -167,14 +182,21 @@ section{
     height:50px;
     background-image: linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
     border-radius: 4px;
+    color: #FFFFFF;
+    font-family: Manrope;
+    border: none;
+    font-size: 24px;
+    
 }
+
 .schedule{
     width: 253px;
-    background-color: #FFFFFF;
-    border: 1px solid #EDEDED;
+   
+    border: 1px ;
     border-radius: 10px;
-    opacity: 0.23;
+    color:#F25CFE;
     visibility: hidden;
+    background:rgba(255,255,255,0.23) ;
 }
 
 
@@ -250,8 +272,6 @@ border-radius: 10px;
     background-color: #FFFFFF;
     z-index: 4;
     margin-top: 32px;
-    /* font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) 20px/32px var(--unnamed-font-family-manrope);
-    font: normal normal 600 20px/32px Manrope; */
 }
 
 .hour_container{
@@ -260,7 +280,7 @@ border-radius: 10px;
     height:90px;
     background: url("timeline.svg") ;
     z-index: 4;
-    margin-top: 20px;
+    top:0px;
     bottom: 20px;
     margin-left: 32px;
     text-align: center;
@@ -269,8 +289,12 @@ border-radius: 10px;
 .hour_container::after{
     content: ":";
     position: absolute;
-    left: 87.7px;
-    top: 32px;
+    left: 84.7px;
+    top: 13.71px;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#8A11bf;
+    margin-top: 5px;
 }
 
 .minute_container{
@@ -279,7 +303,7 @@ border-radius: 10px;
     height:90px;
     background: url("timeline.svg") ;
     z-index: 4;
-    margin-top: 20px;
+    top:0px;
     bottom: 20px;
     margin-left: 19px;
     text-align: center;
@@ -291,7 +315,7 @@ border-radius: 10px;
     height:90px;
     background: url("timeline.svg") ;
     z-index: 4;
-    margin-top: 20px;
+   top:0px;
     bottom: 20px;
     margin-left: 19px;
     text-align: center;
@@ -300,39 +324,82 @@ border-radius: 10px;
 .minute_container::after{
     content: ":";
     position: absolute;
-    left: 87.7px;
-    top: 32px;
+    left: 84.7px;
+    top: 13.71px;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#8A11bf;
+    margin-top: 5px;
 }
 
 .time_hour_text{
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#8A11bf;
+    margin-top: 5px;
 }
 
 .hours{
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 22px;
+    color:#5f0089;
+    margin-top: 5px;
+    position: relative;
+    bottom: 33px;
+
 }
 
 .time_minute_text{
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#8A11bf;
+    margin-top: 5px;
+
 }
 
 .minute{
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 22px;
+    color:#5f0089;
+    margin-top: 5px;
+    position: relative;
+    bottom: 33px;
+
+    
 }
 
 .time_second_text{
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#8A11bf;
+
+    margin-top: 5px;
 }
 
 
 
 .am_pm_text{
     background-color: transparent;
+    font-family: Barlow;
+    font-size: 36px;
+    color:#ffffff;
+    margin-top: 17px;
 }
 
 .second{
     
     background: url("timeline.svg") ;
+    font-family: Barlow;
+    font-size: 22px;
+    color:#5f0089;
+    margin-top: 5px;
+    position: relative;
+    bottom: 33px;
 }
 
 
@@ -343,7 +410,7 @@ border-radius: 10px;
     height:90px;
     background: url("AM_svg.svg") ;
     z-index: 4;
-    margin-top: 20px;
+    top:0px;
     bottom: 20px;
     margin-left: 20px;
     text-align: center;
@@ -357,11 +424,9 @@ border-radius: 10px;
 }
 
 .msg{
-    background: transparent;
-    height: 34px;
-    margin-top: 22px;
-    margin-left: 25px;
-    color: black;
+
+    font-size: 27px;
+    color: white;
 }
 
 .morning_text{
@@ -423,10 +488,14 @@ border-radius: 10px;
 
 #Wake_Up_Time{
     background: transparent;
-    font-size: 15px;
     height: 10px;
     margin-top: 10px;
     margin-left: 12px;
+    font-family: Manrope;
+    
+    font-size: 15px;
+    
+    letter-spacing: 0px;
     
 }
 
@@ -435,6 +504,11 @@ border-radius: 10px;
     font-size: 15px;
     height: 10px;
     margin-left: 12px;
+    font-family: Manrope;
+    
+    font-size: 15px;
+    
+    letter-spacing: 0px;
 }
 
 #Nap_Time{
@@ -442,6 +516,11 @@ border-radius: 10px;
     font-size: 15px;
     height: 10px;
     margin-left: 12px;
+    font-family: Manrope;
+    
+    font-size: 15px;
+    
+    letter-spacing: 0px;
 }
 
 #Night_Time{
@@ -449,4 +528,9 @@ border-radius: 10px;
     font-size: 15px;
     height: 10px;
     margin-left: 12px;
+    font-family: Manrope;
+    
+    font-size: 15px;
+    
+    letter-spacing: 0px;
 }
