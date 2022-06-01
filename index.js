@@ -64,21 +64,22 @@ function perform()
 
     var pic=document.getElementById("pic");
 
-    var hour=document.getElementsByClassName("time_hour_text")[0].textContent;
-    var am=document.getElementsByClassName("am_pm_text")[0].textContent;
+   var hour=new Date().getHours();
 
-    if(wakeup==hour&&am=="AM")
+   if(wakeup==hour)
     {
         pic.setAttribute("src","Component 30 – 1.png");
         msgaccess=document.getElementById("msgaccess");
         msgaccess.className="morning_text";
 
         msgaccess.textContent="GRAB SOME HEALTHY BREAKFAST!!!";
+
         document.getElementsByClassName("msg")[0].textContent="GOOD MORNING!! WAKE UP !!";
 
 
+
     }
-    else if(lunch==hour&&am=="PM")
+    else if(lunch==hour)
     {
         pic.setAttribute("src","Group 5183.png");
 
@@ -86,10 +87,10 @@ function perform()
         msgaccess.className="lunch_text";
 
         msgaccess.textContent="LET'S HAVE SOME LUNCH !!";
-        
+
         document.getElementsByClassName("msg")[0].textContent="GOOD AFTERNOON !! TAKE SOME SLEEP";
     }
-    else if(nap==hour&&am=="PM")
+    else if(nap==hour)
     {
         pic.setAttribute("src","lunch_image.png");
 
@@ -112,7 +113,6 @@ function perform()
         
     }
 
-    return;
 
 }
 
