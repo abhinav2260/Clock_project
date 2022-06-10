@@ -56,7 +56,7 @@ function setalarm()
 
 function perform()
 {
-    // console.log("perform called");
+    console.log("perform called");
     var wakeup = document.getElementById("optionset1").value;
     var lunch = document.getElementById("optionset2").value;
     var nap = document.getElementById("optionset3").value;
