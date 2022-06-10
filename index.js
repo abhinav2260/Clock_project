@@ -254,14 +254,8 @@ function settime(){
 
     }
     else
-    {  schedule.style.visibility="hidden";
-      pic.setAttribute("src","default_clock (1).jpg");
-
-        msgaccess=document.getElementById("msgaccess");
-        msgaccess.className="night_text";
-
-        msgaccess.textContent="HELLO!";
-        document.getElementsByClassName("msg")[0].textContent="Hello , welcome";
+    {  
+        schedule.style.visibility="hidden";
     }
 
 
